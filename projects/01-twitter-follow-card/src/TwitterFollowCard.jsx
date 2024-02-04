@@ -1,7 +1,7 @@
 // Hooks
 import { useState } from 'react';
 
-export function TwitterFollowCard({ children, userName = 'unknown', initialIsFollowing }) {
+export function TwitterFollowCard({ children, userName = 'unknown', initialIsFollowing, images }) {
 	const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
 	const text = isFollowing ? 'Siguiendo' : 'Seguir';
@@ -12,18 +12,18 @@ export function TwitterFollowCard({ children, userName = 'unknown', initialIsFol
 	};
 
 	return (
-		<article className='tw-followCard-article'>
-			<header className='tw-followCard-header'>
-				<img className='tw-followCard-avatar' src={`https://i.pravatar.cc/150?u=${userName}`} alt={`Avatar de ${children}`} />
-				<div className='tw-followCard-info'>
+		<article className="tw-followCard-article">
+			<header className="tw-followCard-header">
+				<img className="tw-followCard-avatar" src={images} alt={`Avatar de ${children}`} />
+				<div className="tw-followCard-info">
 					{children}
-					<span className='tw-followCard-infoUserName'>{`@${userName}`}</span>
+					<span className="tw-followCard-infoUserName">{`@${userName}`}</span>
 				</div>
 			</header>
 			<aside>
 				<button className={buttonClassName} onClick={handleClick}>
-					<span className='tw-followCard-text'>{text}</span>
-					<span className='tw-followCard-stopFollow'>Dejar de seguir</span>
+					<span className="tw-followCard-text">{text}</span>
+					<span className="tw-followCard-stopFollow">Dejar de seguir</span>
 				</button>
 			</aside>
 		</article>

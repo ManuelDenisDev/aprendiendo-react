@@ -1,7 +1,7 @@
 export const users = [
-	{ userName: 'lukeskywalker', name: 'Luke Skywalker', isFollowing: true },
-	{ userName: 'leiaorgana', name: 'Leia Organa', isFollowing: false },
-	{ userName: 'hansolo', name: 'Han Solo', isFollowing: false },
-	{ userName: 'darthvader', name: 'Darth Vader', isFollowing: true },
-	{ userName: 'obiwankenobi', name: 'Obi-Wan Kenobi', isFollowing: true },
+	{ userName: 'lukeskywalker', name: 'Luke Skywalker', isFollowing: true, images: './assets/personajes/lukeskywalker.webp' },
+	{ userName: 'leiaorgana', name: 'Leia Organa', isFollowing: false, images: './assets/personajes/leiaorgana.webp' },
+	{ userName: 'hansolo', name: 'Han Solo', isFollowing: false, images: './assets/personajes/hansolo.webp' },
+	{ userName: 'darthvader', name: 'Darth Vader', isFollowing: true, images: './assets/personajes/darthvader.webp' },
+	{ userName: 'obiwankenobi', name: 'Obi-Wan Kenobi', isFollowing: true, images: './assets/personajes/obiwankenobi.webp' },
 ];
